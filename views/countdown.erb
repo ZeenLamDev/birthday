@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link rel='stylesheet' href='app.css'>
   <title>Birthday</title>
   </head>
   <body>
-    <div>
+    <div class='bday-message'>
       <% if @date == 365 %>
-        <h1>Happy Birthday <%= @name %> !<h1>
+        <h1 class='h1-countdown'>Happy Birthday <%= @name %> !<h1>
       <% else %>
-        <h3>Your birthday will be in <%= @date %> days <%= @name %> !</h3>
+        <h2 class='h2-countdown'>Your birthday will be in <%= @date %> days <%= @name %> !</h2>
       <% end %>
+    </div>
+    <div>
     </div>
   </body>
 </html>

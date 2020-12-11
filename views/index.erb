@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link rel='stylesheet' href='app.css'>
   <title>My Birthday App</title>
   </head>
   <body>
-    <div>
-      <form action="/names" method="post">
+    <div class='form'>
+      <form action="/names" method="post" class='form'>
       <div>
-        <h1>Hello there!</h1>
-      </div>
-      <div>
-        <h2>What's your name?</h2>
-      </div>
-      <div class="form-group">
-        <input type="text" name="your_name" class="form-control" placeholder="Please enter your name">
+        <h1 class='h1-greeting'>Hello there!</h1>
       </div>
       <div>
-        <h2>When's your birthday?</h2>
+        <h2 class='h2-greeting'>What's your name?</h2>
       </div>
-      <div class="form-group">
-        <label for="Day">Day</label>
-        <input type="text" name="your_bday_day" class="form-control" placeholder="Please enter your birthday day">
+      <div>
+        <input type="text" name="your_name" class="form-name-input" placeholder="Please enter your name">
       </div>
-      <div class="form-group">
-        <label for="Month">Month</label>
-        <select name="your_bday_month" class="form-control">
+      <div>
+        <h2 class='h2-greeting'>When's your birthday?</h2>
+      </div>
+      <div class='day'>
+        <label for="Day" class='name-label'>Day</label>
+        <input type="text" name="your_bday_day" class="form-day-input" placeholder="Day">
+      <%# </div>
+      <div class='month'> %>
+        <label for="Month" class='month-label'>Month</label>
+        <select name="your_bday_month" class="form-month-input">
           <option value="1">January</option>
           <option value="2">February</option>
           <option value="3">March</option>
@@ -40,7 +41,7 @@
         </select>
       </div>
       <div>
-        <input type="submit" value="Go!">
+        <input type="submit" value="Go!" class="submit-button">
       </div>
       </form>
     </div>
