@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>My Birthday App</title>
+  </head>
+  <body>
+    <div>
+      <form action="/names" method="post">
+      <div>
+        <h1>Hello there!</h1>
+      </div>
+      <div>
+        <h2>What's your name?</h2>
+      </div>
+      <div class="form-group">
+        <input type="text" name="your_name" class="form-control" placeholder="Please enter your name">
+      </div>
+      <div>
+        <h2>When's your birthday?</h2>
+      </div>
+      <div class="form-group">
+        <label for="Day">Day</label>
+        <input type="text" name="your_bday_day" class="form-control" placeholder="Please enter your birthday day">
+      </div>
+      <div class="form-group">
+        <label for="Month">Month</label>
+        <select name="your_bday_month" class="form-control">
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+      </div>
+      <div>
+        <input type="submit" value="Go!">
+      </div>
+      </form>
+    </div>
+  </body>
+</html>
